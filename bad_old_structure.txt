@@ -1,0 +1,396 @@
+// console.log(pre_path.length);
+// // path.full_path.
+// path.pre_folders.pop();
+// file_list.innerHTML = "";
+// path.pre_folders[last_index - 1].children.forEach(update_list);
+// console.log(path.pre_folders[last_index].children);
+
+// console.log(pre_path[last_index].outerText);
+// console.log(pre_path[last_index]);
+// console.log(pre_path[length - 1]);
+// console.log(pre_path.length - 1);
+// console.log(pre_path.length);
+
+// let last_index = current_path.length == 0 ? 0 : current_path.length - 1;
+
+// I made "check" variable to checking if the user clicked the home_btn or not
+// for not make the next code run directly(but it's not finished yet).
+// Good luck.
+
+// Compelete tomorrow from here.
+// else if(reverse.name == btn.outerText){
+//     reverse.children.forEach(update_list);
+// }
+
+// let last_index = reverse.length == 0 ? 0 : reverse.length - 1;
+
+// previous_folder = reverse[last_index];
+
+// file_list.innerHTML = "";
+// console.log(pre_path);
+// console.log(pre_path[last_index]);
+// pre_path.pop();
+// path.innerText = pre_path.join("/");
+
+// if(pre_path[1] == home_btn.outerText)
+//     file_list.appendChild(previous_folder.home_btn);
+
+// // else
+//     // previous_folder.children.forEach(update_list);
+
+// children: [{name: "Test", type: "folder"}, {name: "Create", type: "file"}, {name: "Folder", type: "folder"}],
+
+// console.log(current_path[last_index]);
+// console.log(last_index);
+// if(current_path[last_index] == current_folder.name)
+// if(current_path[last_index] == current_folder.name)
+// let folder_name = input_name.value;
+// if(input_name.value != ""){
+    // console.log(last_index);
+    // console.log(current_folder.children);
+    // let last_index = current_path.length == 0 ? 0 : current_path.length - 1;
+    // console.log(last_index);
+    // console.log(current_folder.children);
+// }
+
+// home_btn.addEventListener("click", () => {
+//     path.innerText += `/ ${home_folder.name} `;
+//     path.style.cssText = `
+//         margin-left: 3px;
+//         font-size: 17px;
+//         color: #333;
+//         font-weight: 600;
+//     `;
+
+//     file_list.innerHTML = "";
+
+//     if(home_folder.children.length === 0){
+//         file_list.innerHTML = `
+//             <p style='text-align: left; font-size: 20px; color: #333; font-weight: 600;'>
+//                 No files or folders found.
+//             </p>
+//         `;
+
+//     }
+
+//     else if(home_folder.children.length != 0){
+//         home_folder.children.forEach((child, index) => {
+//             if(child.type == "folder"){
+//                 const folder_btn = document.createElement("button");
+//                     file_list.appendChild(folder_btn);
+
+//                 folder_btn.innerText = child.name;
+//                 file_list.appendChild(folder_btn);
+
+//             }
+//             else{
+//                 const file_para = document.createElement('p');
+//                 file_para.innerText = child.name;
+//                 file_list.appendChild(file_para);
+//             }
+
+//         });
+
+//     }
+
+// });
+
+// setInterval(, 500);
+
+// path.innerText += "/Music";
+// current_path = path.outerText.split('/');
+// console.log(current_path);
+
+// let test = input_name.value == "" ? "Work" : "Sorry";
+// console.log(test);
+
+
+// function create_folder(){
+//     // Make a small window to get the name of folder from user.
+//     if(input_name.value == ""){
+//         create_container.style.display = "block";
+//         let folder_name = input_name.value;
+
+//         let data_folder = data_structure(folder_name, "folder");
+//         data_folder.children = [];
+//         return data_folder;
+//     }
+    
+// }
+
+// function create_file(){
+//     // Make a small window to get the name of folder from user.
+//     create_container.style.display = "block";
+//     let file_name = input_name.value;
+
+//     return data_structure(file_name, "file");
+
+// };
+
+// create_btn.addEventListener("click", () => {
+//     create_container.style.display = "none";
+//     // input_name.value = "";
+
+//     let folder_name = input_name.value;
+
+//     // data_folder = data_structure(folder_name, "folder");
+//     // data_folder.children = [];
+
+//     // console.log(da);
+//     if(input_name.value == ""){
+//         alert("Enter Name Folder First");
+//     }
+    
+//     else if( input_name.value != ""){
+//         let last_index = current_path.length == 0 ? 0 : current_path.length - 1;
+//         console.log(last_index);
+        
+//         if(current_path[last_index] == current_folder.name){
+//             current_folder.children.push(create_folder());
+//             console.log(current_folder.children);
+        
+//         }
+
+//     }
+
+// });
+
+// cancel_btn.addEventListener("click", () => {
+//     create_container.style.display = "none";
+//     input_name.value = "";
+
+// });
+
+
+// create_folder_btn.addEventListener("click", () => {
+
+//     // let last_index = current_path.length - 1;
+//     let last_index = current_path.length == 0 ? 0 : current_path.length - 1;
+//     // let last_index = current_path.length > 0 ? ;
+//     console.log(last_index);
+//     // console.log(current_path);
+    
+//     if(current_path[last_index] == current_folder.name){
+//         // console.log(create_folder());
+//         current_folder.children.push(create_folder());
+//         console.log(current_folder.children);
+//         // console.log(home_folder.children);
+//         // current_path.push("Music");
+//         console.log(current_path);
+//     }
+
+//     // else if()
+    
+//     // current_folder.children.forEach((child, index) => {
+//     // });
+
+// });
+
+// console.log(current_folder.date);
+
+// function create_folder(){
+    //     // Make a small window to get the name of folder from user.
+//     const path_list = path.outerText.split('/');
+
+//     let data = data_structure("music", "folder", path_list[path_list.length - 1]);
+//     data["children"] = [];
+
+//     home_folder.children.forEach((child, index) => {
+    
+    
+//         if(path_list[path_list.length - 1] == child.name){
+
+
+
+//             console.log("Worked");
+//         }
+//     });
+
+//     // home_folder
+// };
+
+// const list = path.outerText.split('/');
+// list.push("Done");
+// list.push("Bye");
+// list.push("Hi");
+// list.push("home");
+// // list[-1] = "Done";
+// // const list = Array.from(path.outerText);
+
+// // console.log(path.outerText);
+// console.log(list[list.length - 1]);
+// console.log(list);
+
+// home_folder.children.forEach((child, index) => {
+//     console.log(child.name)
+//     const path_list = path.outerText.split('/');
+//     // console.log(path_list[path_list.length - 1]);
+
+//     if(path_list[path_list.length - 1] == child.name){
+
+//         console.log("Worked");
+//     }
+//     // else
+//     //     console.log(":|");
+// });
+// home_btn.addEventListener("click", () => {
+    
+// });
+
+
+// console.log(create_folder());
+// console.log(current_path[length - 1]);
+// console.log(current_path.length);
+// if(current_path.l == 0){
+    // if(current_path[last_index] == current_folder.name){
+    //     console.log("work!!!!!!!");
+        
+    // }
+// }
+// if(current_path[length - 1] == current_folder.name){
+//     current_folder.children.push(create_folder());
+//     console.log(current_folder.children);
+// }
+
+// if(current_path.length == 0){
+// }
+// else if(current_path.length > 0){
+
+//     }
+// }
+
+// This is a bad logic and structure of data
+
+// let data_structure = { // The data structure of file and folder.
+//     name: "test",
+//     type: "",
+//     date: time_date,
+//     // btn: document.createElement("button"),
+//     btn: undefined,
+//     childern: [
+//         {
+//             btn: undefined,
+//             name: "work",
+//         }
+
+//     ],
+// };
+
+// let home_folder = { // The home folder and children of home folder will be stored in this object.
+//     name: "Home",
+//     type: "folder",
+//     date: time_date,
+//     children: [data_structure, data_structure, data_structure, data_structure, data_structure, data_structure, data_structure, data_structure, data_structure, data_structure],
+//     // children: [],
+// };
+
+// home_btn.addEventListener("click", () => {
+    
+//     path.innerText = home_folder.name;
+//     path.style.cssText = `
+//         margin-left: 3px;
+//         font-size: 17px;
+//         color: #333;
+//         font-weight: 600;
+//     `;
+
+//     if(home_folder.children.length === 0){
+//         file_list.innerHTML = `
+//             <p style='text-align: left; font-size: 20px; color: #333; font-weight: 600;'>
+//                 No files or folders found.
+//             </p>
+//         `;
+
+//     }else{
+        
+//         file_list.innerHTML = "";
+
+//         home_folder.children.forEach((child, index) => {
+
+//             const btn = document.createElement("button");
+
+//             child.btn = btn;
+            
+//             child.btn.innerText = child.name + " " + (index + 1);
+
+//             btn.addEventListener("click", () => {
+//                 console.log("Work?");
+
+//                 if(child.childern.length === 0){
+//                     file_list.innerHTML = `
+//                         <p style='text-align: left; font-size: 20px; color: #333; font-weight: 600;'>
+//                         No files or folders found.
+//                         </p>
+//                     `;
+                
+//                 }else{
+//                     file_list.innerHTML = "";
+
+//                     child.childern.forEach((child_content, index) => {
+//                         const btn_2 = document.createElement("button");
+//                         child_content.btn = btn_2;
+
+//                         file_list.appendChild(child_content.btn);
+//                         file_list.appendChild(child.btn);
+//                     });
+
+//                 }
+
+//             });
+
+//             // console.log(child);
+            
+//         });
+
+//     }
+    
+    
+// });
+
+// home_folder.children.forEach((child, index) => {
+//     // console.log("Work?");
+
+// });
+
+// path.innerHTML += child.name;
+
+// if(home_folder.childern[index].length === 0){
+//     file_list.innerHTML = `
+//     <p style='text-align: left; font-size: 20px; color: #333; font-weight: 600;'>
+//     No files or folders found.
+//     </p>
+//     `;
+// }
+
+// file_list.innerHTML = "";
+
+// const folder_file_btn = document.createElement("button");
+// folder_file_btn.innerText = child.name;
+// child.push = folder_file_btn;
+
+// console.log(folder_file_btn);
+
+// Here a problem idk why.
+// so, think abt the solution later okay.
+// good luck:>
+// Done:}
+
+// home_folder.children.forEach((item, index) => {
+
+//     // file_list.innerText = index + 1;
+//     // console.log(item);
+// });
+
+// const current_folder = document.querySelector(".current-folder");
+// let files_folders = [ // The array of files and folders(here will be storage all of files and folders).
+//     {
+//         home: {
+//             name: "Home",
+//             type: "folder",
+//             date: time_date,
+//         },
+//     }
+// ];
+// let current_folder = home_folder; // The current folder is the home folder.
+
+// let path_array = [current_folder.name]; // The array of path.

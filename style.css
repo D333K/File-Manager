@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f5f6fa;
+    font-family: system-ui;
+    /* font-family: 'Inter', 'Readex Pro', system-ui, -apple-system, sans-serif; */
+}
+
+h1{
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.container{
+    width: 80%;
+    padding: 30px;
+    text-transform: capitalize;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.control-btns{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.control-btns button{
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000bd;
+    outline: none;
+    border: 1px solid #000000b4;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.control-btns button:hover{
+    background: #e0e0e0;
+    color: #000;
+}
+
+.current-folder{
+    width: 90%;
+    padding: 15px 0;
+    border-top: 1px solid #000000b4;
+    border-bottom: 1px solid #000000b4;
+    overflow-y: auto;
+}
+
+.folder-content{
+    width: 90%;
+    max-height: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000000b4;
+    overflow-y: auto;
+}
+.folder-content ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: none;
+    gap: 15px;
+    padding: 10px;
+    list-style: none;
+}
+
+.folder-content ul button{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    outline: none;
+    background: transparent;
+    color: #333;
+    font-size: 16px;
+    border: 0px solid transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.folder-content ul button:hover{
+    background: #bebdbd;
+    color: #000;
+}
+
+li p{
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+li p:hover{
+    background: #bebdbd;
+    color: #000;
+}
+
+#path{
+    margin-left: 3px;
+    text-transform: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+}
+
+.create-container, .rename-container, .delete-container{
+    width: 500px;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    bottom: 33%;
+    background-color: #e0e0e0;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    box-shadow: 0px 5px 5px 3px #33333356;
+}
+
+.create-container input{
+    width: 90%;
+}
+
+.create-container input, .rename-container input{
+    height: 47px;
+    margin: 20px;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid #33333396;
+    border-radius: 6px;
+    outline: none;
+    color: #333;
+    transition: .3s;
+}
+
+.create-container button, .rename-container button, .delete-container button{
+    margin: 0 20px;
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: .3s;
+}
+
+.create-container button:hover, .rename-container button:hover, .delete-container button:hover{
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+#create-btn, #rename-btn{
+    background-color: #333333c4;
+}
+
+#create-btn:hover, #rename-btn:hover{
+    background-color: #333;
+}
+
+#cancel-create-btn, #cancel-rename-btn{
+    background-color: #ff0000af;
+}
+
+#cancel-create-btn:hover, #cancel-rename-btn:hover{
+    background-color: #ff0000;
+}
+
+#delete-btn{
+    background-color: #ff0000af;
+}
+
+#delete-btn:hover{
+    background-color: #ff0000;
+}
+
+#cancel-delete-btn{
+    background-color: #333333c4;
+}
+
+#cancel-delete-btn:hover{
+    background-color: #333;
+}
+
+.rename-container input{
+    width: 60%;
+}
+
+input:focus{
+    border-color: #333;
+}
+
+#select-f-rename{
+    width: 100px;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#select-f-delete{
+    width: 90%;
+    height: 40px;
+    margin: 15px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+svg{
+    width: 24px;
+}
