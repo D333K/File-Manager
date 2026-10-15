@@ -95,9 +95,9 @@ const file_svg = `
     </svg>
 `;
 
-function data_structure(name_f, type_f){
+const data_structure = (name_f, type_f) => {
     
-    data = {
+    let data = {
 
         name: name_f,
         type: type_f,
@@ -111,7 +111,7 @@ function data_structure(name_f, type_f){
 
 // This function check to disabled the buttons or not by some conditions
 // and update the folder list and current path.
-function disabled_btn_update(){
+const disabled_btn_update = () => {
 
     folders_btn = file_list.querySelectorAll("button");
 
@@ -149,7 +149,7 @@ function disabled_btn_update(){
 
 };
 
-function option_list(value, text){
+const option_list = (value, text) => {
     
     const option_f = document.createElement("option");
     
@@ -160,7 +160,7 @@ function option_list(value, text){
 
 }
 
-function update_list(child, index){
+const update_list = (child, index) => {
 
     // const date_create = document.createElement("span");
 
@@ -197,7 +197,7 @@ function update_list(child, index){
 
 }
 
-function create_folder(){
+const create_folder = () => {
 
     // Make a small window to get the name of folder from user.
     create_f.create_container.style.display = "block";
@@ -214,7 +214,7 @@ function create_folder(){
     
 }
 
-function create_file(){
+const create_file = () => {
 
     // Make a small window to get the name of folder from user.
     create_f.create_container.style.display = "block";
@@ -446,7 +446,7 @@ home_btn.addEventListener("click", () => {
     
 });
 
-function cd(){ //cd => Change Direction.
+const cd = () => { //cd => Change Direction.
 
     // This condtition to check if the user clicked the home_btn or still in root
     // to not executing this code every one second(look at line 340).
